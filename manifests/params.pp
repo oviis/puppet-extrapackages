@@ -7,6 +7,6 @@ class extrapackages::params {
   case $::osfamily {
     'Debian': {
       $packages = [ "tree" ]
-      package { $enhancers: ensure => "installed" }
+      package { $packages: ensure => "installed" }
     }
 }
