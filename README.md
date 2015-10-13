@@ -9,7 +9,7 @@
 
 ## Overview
 
-This module installes in one array more extra debian packages
+This module installes as tagged packages more extra debian packages
 
 ## Module Description
 
@@ -22,7 +22,10 @@ This module installes in one array more extra debian packages
 ### Beginning with extrapackages
 
 ## Usage
-
+class extrapackages {
+  Package <| tag == "basepackage" |>
+  include extrapackages
+}
 ## Reference
 
 ## Limitations
